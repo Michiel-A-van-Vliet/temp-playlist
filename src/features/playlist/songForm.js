@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addSong } from "./playlistSlice";
 
-function songForm() {
-  // const dispatch = useDispatch();
+function SongForm() {
+  const dispatch = useDispatch();
 
   return (
     <div>
@@ -31,7 +31,7 @@ function songForm() {
       <button
         // className={styles.button}
         // onClick={() => dispatch(incrementByAmount(incrementValue))}
-        onClick={() => useDispatch(addSong())}
+        onClick={() => dispatch(addSong())}
       >
         Add Song
       </button>
@@ -39,4 +39,4 @@ function songForm() {
   );
 }
 
-export default songForm;
+export default SongForm;

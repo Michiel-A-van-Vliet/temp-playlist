@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addSong, removeSong, songsList } from "./playlistSlice";
-import SongForm from "./songForm";
+import SongForm from "./SongForm";
 import SongList from "./songList";
 
 function Playlist() {
